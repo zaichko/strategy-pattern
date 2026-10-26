@@ -18,5 +18,11 @@ public class Main {
         System.out.println(
                 navigator.navigate("Home", "Park")
         );
+
+        navigator.setStrategy(new PublicTransportStrategy());
+
+        System.out.println(
+                navigator.navigate("Home", "University")
+        );
     }
 }
